@@ -1,0 +1,77 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+.provider {
+    min-height: 787px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        min-height: 832px;
+        position: relative;
+
+    }
+
+    &__descr {
+        padding: 190px 0 199px;
+    }
+
+    &__descr-title {
+        color: #363738;
+        font-family: 'Exo 2', sans-serif;
+        font-weight: 600;
+        font-size: 52px;
+        line-height: 65px;
+        max-width: 610px;
+        padding-bottom: 40px;
+    }
+
+    &__descr-text {
+        max-width: 525px;
+        color: #6B6B6C;
+        font-family: 'PT Sans', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 40px;
+        margin-right: 80px;
+    }
+
+    &__descr-more {
+        color: #363738;
+        min-width: 105px;
+        font-family: 'PT Sans', sans-serif;
+        font-style: 400;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 10px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background: #FFCE50;
+            width: 117px;
+            height: 3px;
+        }
+    }
+
+    &__picture {
+        background-color: #0B7572;
+        width: 500px;
+    }
+
+
+    &__picture-img {
+        position: absolute;
+        top: 109px;
+        right: 0;
+        border-radius: 20px;
+    }
+}
