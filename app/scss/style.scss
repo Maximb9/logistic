@@ -17,6 +17,8 @@
 
     &__descr {
         padding: 190px 0 199px;
+        background: #e5e5e5;
+        width: 740px;
     }
 
     &__descr-title {
@@ -72,6 +74,87 @@
         position: absolute;
         top: 109px;
         right: 0;
-        border-radius: 20px;
+        border-radius: 20px 0px 20px 20px;
+        border-top-color: transparent;
+        background-size: cover;
     }
+}
+
+.card-products {
+    position: relative;
+
+    &__inner {
+        // position: absolute;
+        display: flex;
+        justify-content: space-between;
+        min-height: 341px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        padding: 40px 125px 56px 80px;
+    }
+
+    &__goods-line {
+        height: 261px;
+        width: 1px;
+        background: #D7D7DD;
+        position: absolute;
+        top: 40px;
+        right: 64px;
+    }
+
+    // &__goods+&__goods::after {
+    //     content: '';
+    //     border-right: 1px solid #D7D7DD;
+    //     height: 261px;
+    //     width: 1px;
+    //     // transform: rotate(90deg);
+    //     position: absolute;
+    //     top: 40px;
+    // }
+
+    &__goods-circle {
+        width: 92px;
+        height: 92px;
+        left: 990px;
+        border-radius: 50%;
+        background: #E9E9EC;
+        padding: 21px 21px;
+        margin-bottom: 24px;
+    }
+
+    &__goods-circle--high {
+        width: 92px;
+        height: 92px;
+        left: 990px;
+        border-radius: 50%;
+        background: #E9E9EC;
+        padding: 26px 12px;
+        margin-bottom: 24px;
+    }
+
+    &__goods-img {
+        display: block;
+    }
+
+    &__goods-title {
+        max-width: 228px;
+        font-style: normal;
+        color: #363738;
+        font-family: 'Exo 2', sans-serif;
+        font-weight: 600;
+        line-height: 27px;
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    &__goods-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #6B6B6C;
+        max-width: 225px;
+    }
+
 }
