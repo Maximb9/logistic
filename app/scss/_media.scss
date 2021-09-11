@@ -23,11 +23,11 @@
         }
 
         &__descr-text {
-            width: 527px;
+            width: 492px;
             color: #6B6B6C;
             font-family: 'PT Sans', sans-serif;
             font-weight: 400;
-            font-size: 15px;
+            font-size: 14px;
             line-height: 24px;
             margin-bottom: 61px;
             font-style: normal;
@@ -50,6 +50,7 @@
             border-radius: 20px 20px 0px 20px;
             border-top-color: transparent;
             object-fit: cover;
+            background-position: center;
         }
     }
 
@@ -59,7 +60,6 @@
             display: flex;
             justify-content: center;
             flex-direction: column;
-            // align-content: space-between;
             position: static;
             padding: 0px;
             background-color: #E5E5E5;
@@ -112,7 +112,7 @@
     }
 }
 
-@media (max-width: 345px) {
+@media (max-width: 376px) {
     .provider {
         &__inner {
             position: relative;
@@ -120,7 +120,7 @@
 
         &__descr {
             background-color: #0B7572;
-            padding: 75px 0 0 0;
+            padding: 75px 16px 40px 15px;
             max-height: 766px;
         }
 
@@ -148,6 +148,7 @@
             line-height: 22px;
             color: #FFFFFF;
             margin-bottom: 32px;
+            max-height: 62px;
         }
 
         &__descr-more {
@@ -164,7 +165,7 @@
             height: 253px;
             border-radius: 15px;
             top: 355px;
-            left: 0;
+            left: 15px;
             right: 0;
             border-radius: 20px 20px 20px 20px;
             border-top-color: transparent;
@@ -173,16 +174,15 @@
     }
 
     .card-products {
-        // position: absolute;
-        // top: 0;
-        // right: 0;
-        // left: 0;
-        // bottom: 0;
 
         &__inner {
             padding: 24px 27px 8px 32px;
             position: relative;
             bottom: 153px;
+            margin-left: 15px;
+            margin-right: 16px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
         }
 
         &__goods {
