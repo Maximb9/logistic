@@ -12,7 +12,6 @@
         justify-content: space-between;
         min-height: 832px;
         position: relative;
-
     }
 
     &__descr {
@@ -28,18 +27,23 @@
         font-size: 52px;
         line-height: 65px;
         max-width: 610px;
-        padding-bottom: 40px;
+        margin-bottom: 40px;
+
     }
 
     &__descr-text {
-        max-width: 525px;
+        max-width: 560px;
         color: #6B6B6C;
         font-family: 'PT Sans', sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
-        padding-bottom: 40px;
+        margin-bottom: 61px;
         margin-right: 80px;
+    }
+
+    &__descr-texttwo {
+        display: none;
     }
 
     &__descr-more {
@@ -76,15 +80,13 @@
         right: 0;
         border-radius: 20px 0px 20px 20px;
         border-top-color: transparent;
-        background-size: cover;
+        object-fit: cover;
+        max-width: 100%;
     }
 }
 
 .card-products {
-    position: relative;
-
     &__inner {
-        // position: absolute;
         display: flex;
         justify-content: space-between;
         min-height: 341px;
@@ -92,6 +94,16 @@
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
         border-radius: 20px;
         padding: 40px 125px 56px 80px;
+        position: relative;
+        max-width: 1240px;
+        width: 100%;
+        right: 0;
+        left: 0;
+        bottom: 151px;
+    }
+
+    &__goods {
+        position: relative;
     }
 
     &__goods-line {
@@ -99,19 +111,10 @@
         width: 1px;
         background: #D7D7DD;
         position: absolute;
-        top: 40px;
-        right: 64px;
+        top: 0px;
+        bottom: 0px;
+        left: -64px;
     }
-
-    // &__goods+&__goods::after {
-    //     content: '';
-    //     border-right: 1px solid #D7D7DD;
-    //     height: 261px;
-    //     width: 1px;
-    //     // transform: rotate(90deg);
-    //     position: absolute;
-    //     top: 40px;
-    // }
 
     &__goods-circle {
         width: 92px;
@@ -156,5 +159,7 @@
         color: #6B6B6C;
         max-width: 225px;
     }
-
 }
+
+
+@import 'media';
